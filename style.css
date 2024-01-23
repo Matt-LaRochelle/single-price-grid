@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     place-content: center;
     height: 100vh;
+    background: rgb(220, 231, 243);
 }
 main {
     display: block;
@@ -16,10 +17,6 @@ main {
     overflow-y: scroll;
     box-shadow: 0px 16px 40px 40px #dadada53;
 }
-body {
-    background: rgb(220, 231, 243);
-}
-
 p {
     line-height: 1.8rem;
 }
@@ -30,6 +27,7 @@ li {
 ul {
     padding: 0;
 }
+
 .top,
 .bottom-left,
 .bottom-right {
@@ -45,7 +43,6 @@ ul {
 .top h2 {
     color: hsl(71, 73%, 54%);
 }
-
 .top p {
     color: hsl(218, 22%, 67%);
 }
@@ -54,32 +51,30 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .bottom p,
 .bottom li {
     color: hsl(204, 43%, 93%);
 }
-
 .bottom h2 {
     color: #f8f8f8;
+    font-weight: 400;
 }
 
 .bottom-left {
     background-color: hsl(179, 62%, 43%);
 }
 .bottom-left h3 {
-    color: hsl(204, 43%, 93%);
+    color: hsla(205, 44%, 86%, 0.893);
     font-size: 1rem;
+    font-weight: 400;
+    margin-top: -20px;
 }
 .bottom-left h3 span {
     color: #f8f8f8;
     font-size: 3rem;
+    position: relative;
+    top: 10px;
 }
-
-.bottom-right {
-    background-color: hsl(179, 60%, 47%);
-}
-
 .bottom-left button {
     display: block;
     width: 100%;
@@ -89,7 +84,13 @@ ul {
     border-radius: 6px;
     padding: 12px 50px;
     box-shadow: -8px 8px 16px 1px #95959568;
+    /* box-shadow: 0px 4px 4px 20px #82828268; */
 }
+
+.bottom-right {
+    background-color: hsl(179, 60%, 47%);
+}
+
 
 @media screen and (max-width: 580px) {
     .bottom {
@@ -97,8 +98,8 @@ ul {
     }
 
     .top,
-.bottom-left,
-.bottom-right {
-    padding: 18px;
-}
+    .bottom-left,
+    .bottom-right {
+        padding: 18px;
+    }
 }
